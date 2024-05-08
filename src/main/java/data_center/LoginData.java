@@ -32,7 +32,6 @@ public class LoginData {
     public String usernameBlankData(){
         return "";
     }
-
     public String usernameLockedData(){
         return "locked_out_user";
     }

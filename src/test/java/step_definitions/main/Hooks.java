@@ -19,20 +19,20 @@ public class Hooks {
         ChromeOptions a = new ChromeOptions();
         WebDriverManager.chromedriver().setup();
         webDriver= new ChromeDriver(a);
-        String URL = "https://magento.softwaretestingboard.com/what-is-new.html";
+        String URL = "https://www.saucedemo.com/";
         webDriver.get(URL);
         webDriver.manage().window().maximize();
-        Thread.sleep(3000);
+        Thread.sleep(1000);
 
     }
     @After
-    public void closeBrowser(Scenario scenario) {
+    public void closeBrowser(Scenario scenario) throws InterruptedException {
         if (scenario.isFailed()) {
             TakesScreenshot takesScreenshot = (TakesScreenshot) webDriver;
             byte[] screenshot = takesScreenshot.getScreenshotAs(OutputType.BYTES);
             scenario.embed(screenshot, "image/png");
         }
-
+        Thread.sleep(1000);
         webDriver.quit();
     }
 }

@@ -6,12 +6,12 @@ Feature: Transaction
     And User input password with valid password
     And User click button button Login
     Then User navigated to Home Page
-    And User click button Add to Cart product with name "Sauce Labs Backpack""
-    And User verify change make Remove Button
-    And User click button Add to Cart product with name "Sauce Labs Bolt T-Shirt"
-    And User verify change make Remove Button
-    And User click button Add to Cart product with name "Sauce Labs Fleece Jacket"
-    And User verify change make Remove Button
+    And User click button Add to Cart first product with name Sauce Labs Backpack
+    And User verify change make Remove Button at first product
+    And User click button Add to Cart second product with name Sauce Labs Bolt T-Shirt
+    And User verify change make Remove Button at second product
+    And User click button Add to Cart third product with name Sauce Labs Fleece Jacket
+    And User verify change make Remove Button at third product
     And User verify the number of product selected is the same as in the Cart Icon
     Then User click on icon cart to verify product
     And User delete product with name "Sauce Labs Backpack"

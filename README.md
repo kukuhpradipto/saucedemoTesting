@@ -11,14 +11,15 @@ and
 
 ## Cucumber Report
 
-There is a feature statistics:
+Feature statistics:
+![image](https://github.com/kukuhpradipto/saucedemoTesting/assets/114077446/4128699a-22e9-4b6b-afb1-6111b4f42b44)
 
-![feature statistics](https://user-images.githubusercontent.com/114077446/216812437-02ba2e15-bf3b-4672-b7cf-20635d672ed8.png)
+Tag Reports:
+![image](https://github.com/kukuhpradipto/saucedemoTesting/assets/114077446/92046fa8-82f6-4150-96a6-b304c72e0b50)
 
-There is a tag report:
+Failures Overview:
+![image](https://github.com/kukuhpradipto/saucedemoTesting/assets/114077446/cf7a7956-a891-4771-a07b-e6edd02b3a9d)
 
-![feature overview page](https://user-images.githubusercontent.com/114077446/216813113-05c6d6b8-8639-49e4-b646-118905be4b74.png)
+Example Bug Capture
+![image](https://github.com/kukuhpradipto/saucedemoTesting/assets/114077446/c6013617-a265-4f03-a053-b184047a91ab)
 
-There is a Tags Statistics:
-
-![feature overview page](https://user-images.githubusercontent.com/114077446/216813250-12661a7b-915c-4354-b80c-880b421e37aa.png)

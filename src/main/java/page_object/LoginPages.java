@@ -57,10 +57,10 @@ public class LoginPages {
             return notifLockedUser;
         }
 
-        @FindBy(xpath = "//h3[.='Epic sadface: Username is required']")
-        private WebElement notifUsernameReq;
-        public WebElement getNotifUsernameReq(){
-            return notifUsernameReq;
-        }
+    @FindBy(xpath = "//h3[.='Epic sadface: Username is required']")
+    private WebElement notifUsernameReq;
+    public WebElement getNotifUsernameReq(){
+        return notifUsernameReq;
+    }
 
 }

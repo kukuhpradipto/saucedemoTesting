@@ -1,4 +1,4 @@
-@Login
+@Login @All
 Feature: Login
   Scenario: Login with account valid username and valid password
     Given User already on login page
@@ -49,7 +49,7 @@ Feature: Login
     And User input password with valid password
     And User click button button Login
     Then User navigated to Home Page
-    And User click button Add to Cart product with name "Sauce Labs Backpack"
+    And User click button Add to Cart first product with name Sauce Labs Backpack
     And User can't click button Add to Cart
 
 
@@ -66,5 +66,5 @@ Feature: Login
     And User input password with valid password
     And User click button button Login
     Then User navigated to Home Page
-    And User click button Add to Cart product with name "Sauce Labs Backpack"
+    And User click button Add to Cart first product with name Sauce Labs Backpack
     And User can't click button Add to Cart

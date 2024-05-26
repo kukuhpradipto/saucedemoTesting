@@ -42,7 +42,6 @@ Feature: Login
     And User click button button Login
     Then Show information user has been locked out
 
-    @Login
   Scenario: Login with account problem username and valid password
     Given User already on login page
     When User input username with problem username
@@ -51,7 +50,6 @@ Feature: Login
     Then User navigated to Home Page
     And User click button Add to Cart first product with name Sauce Labs Backpack
     And User can't click button Add to Cart
-
 
   Scenario: Login with account slow response username and valid password
     Given User already on login page

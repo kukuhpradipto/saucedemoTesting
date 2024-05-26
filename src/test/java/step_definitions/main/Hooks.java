@@ -15,16 +15,17 @@ import java.util.HashMap;
 public class Hooks {
     public static WebDriver webDriver;
     @Before
-    public void openBrowser() throws InterruptedException {
-        ChromeOptions a = new ChromeOptions();
-        WebDriverManager.chromedriver().setup();
-        webDriver= new ChromeDriver(a);
-        String URL = "https://www.saucedemo.com/";
-        webDriver.get(URL);
-        webDriver.manage().window().maximize();
-        Thread.sleep(1000);
+        public void openBrowser() throws InterruptedException {
+            ChromeOptions a = new ChromeOptions();
+            WebDriverManager.chromedriver().setup();
+            webDriver = new ChromeDriver(a);
+            String URL = "https://www.saucedemo.com/";
+            webDriver.get(URL);
+            webDriver.manage().window().maximize();
+            Thread.sleep(1000);
 
-    }
+        }
+
     @After
     public void closeBrowser(Scenario scenario) throws InterruptedException {
         if (scenario.isFailed()) {

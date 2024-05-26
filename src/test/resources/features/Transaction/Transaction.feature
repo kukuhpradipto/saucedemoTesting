@@ -1,4 +1,4 @@
-@Transaction @All
+@All @Transaction
 Feature: Transaction
   Scenario: Transactions with three selected products and deleting one product during the verify check out process
     Given User already on login page
@@ -169,7 +169,6 @@ Feature: Transaction
     And User input Postal Code field on form Detail information with one hundred words data
     And User click Continue Button fot next step
     And Show information your data very long
-
 
   Scenario: Transactions with three selected products and Check out form information input one hundred words data all field
     Given User already on login page
